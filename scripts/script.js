@@ -33,7 +33,7 @@ $(function () {
 
 
 
-$(".search").on("click", function (event)) {
+$(".search").on("click", function (event) {
     //grab values from the input elements
     var date1 = document.querySelector("#from").value;
     var date2 = document.querySelector("#to").value;
@@ -49,7 +49,7 @@ $(".search").on("click", function (event)) {
             console.log(data)
             // console.log(data)
             // console.log(data)
-        })};
+        });
 
 
 function search(){
