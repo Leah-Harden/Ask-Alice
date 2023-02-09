@@ -49,7 +49,7 @@ $(".search").on("click", function (event) {
             console.log(data)
             // console.log(data)
             // console.log(data)
-        })
+        });
 
 
 function search(){
@@ -59,4 +59,4 @@ function search(){
     .then((data) => console.log(data));
 }
 
-search()
+search();
