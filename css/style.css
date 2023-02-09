@@ -1,13 +1,59 @@
+button {
+    display: flex;
+    justify-content: center;
+}
+
+.body-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rabbit {
+    width: 25%;
+    height: 25%;
+}
+
 .app-name {
-    height: 100px;
-    border-bottom: 5px red;
+    height: 75px;
+    padding: 5px;
+    border-bottom: solid 5px red;
     display: flex;
     align-items: center;
     font-size: xx-large;
+}
+
+.instructions {
+    justify-content: flex-end;
 }
 
 .search-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.calendar-container-from {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.calendar-container-to {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
 }
