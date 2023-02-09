@@ -1,4 +1,13 @@
 .app-name {
-    height: 50px;
+    height: 100px;
     border-bottom: 5px red;
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
