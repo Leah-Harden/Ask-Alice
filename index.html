@@ -11,14 +11,21 @@
 <body>
     <header class="app-name">
         <h1>Ask Alice!</h1>
+        <hr>
     </header>
     <div class="body-element">
         <div class="instructions">Type in two dates between 2004 and now! (MM/DD/YYYY)</div>
-        <img src="https://www.pinterest.com/pin/122934264806457690/"alt="picture of rabbit" class="rabbit">
+        <img src="./photos/bunny.jpg"alt="picture of rabbit" class="rabbit">
         <div class="search-container">
-            <input id="from">Start Date</input>
+            <div class="calendar-container-from">
+                <h5>Start Date</h5>
+                <input id="from"></input>
+            </div>
             <h3>TO</h3>
-            <input id="to">End Date</input>
+            <div class ="calendar-container-to">
+                <h5>End Date</h5>
+                <input id="to"></input>
+            </div>
         </div>
         <button class="search uk-link">Recall Rabbithole</button>
     </div>
