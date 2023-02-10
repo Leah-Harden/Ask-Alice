@@ -5,16 +5,28 @@
     --brown: #362412;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
 
 .title {
-    margin: 70px 50px 20px 50px;
     font-size:50px ;
-    text-align: center;
+    justify-content: center;
 }
 
 .main-container{
     text-align: center;
     margin: 0px 100px 0px 100px;
+
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -30,17 +42,6 @@ hr {
     min-width: 200px;
 }
 
-img {
-    min-width: 400px;
-    min-height: 425px;
-    max-width: 300px;
-    max-height: 400px;
-
-    margin: 110px 40px 0px 40px;
-    border: #362412 solid 8px;
-    border-radius: 5px;
-    text-align: center;
-}
 .right{
     text-align: right;
 }
@@ -60,6 +61,7 @@ img {
     font-size: 20px;
     min-width: 300px;
     text-overflow: scroll;
+    background-color: whitesmoke;
 }
 
 .brown {
@@ -87,13 +89,32 @@ h5{
     font-size: 25px;
 }
 button {
-    border-radius: 10px;
-    border: #F57676 1px solid;
-    width: 200px;
-    text-align: left;
-    padding: 10px;
-    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(245, 120, 17);
+    width: 180px;
+    justify-content: center;
 }
+
+#rabbit {
+    justify-content: flex-start;
+    width: 5%;
+    height: 5%;
+    transform: rotate(11deg);
+}
+
+#image-api {
+    border: #362412 solid 8px;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+}
+
+#api-source {
+    justify-content: center;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .instructions,
     .body-element,
