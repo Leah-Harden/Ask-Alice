@@ -46,8 +46,25 @@ $(".search").on("click", function (event) {
         .then((response) => response.json())
         .then((data) => {
             console.log(data)
-            // console.log(data)
-            // console.log(data)
+            var country = data.results[0].country;
+            var productdescription = data.results[0].product_description;
+            var reason = data.results[0].reason_for_recall;
+            var inidate = data.results[0].recall_initiation_date;
+            var firm = data.results[0].recalling_firm;
+
+            localStorage.setItem("country", country);
+            localStorage.setItem("product", productdescription);
+            localStorage.setItem("reason", reason); 
+            localStorage.setItem("date", inidate);
+            localStorage.setItem("firm", firm);
+            
         }); 
+        showRecalls();
         
 })
+// This function re-directs the index.html to the search-results.html
+var showRecalls = function (){
+
+    document.location.replace('./search-results.html');
+
+}
