@@ -40,6 +40,8 @@ button {
     flex-direction: row;
     justify-content: space-around;
     background-color: whitesmoke;
+    height: 285px;
+    align-items: flex-start;
 }
 
 .calendar-container-from {
@@ -76,23 +78,46 @@ button {
     background-color: red;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .app-name,
-    .instructions,
-    .body-element
-    .search-container,
-    .search {
-        height: 75%;
-        width: 75%;
-    }};
+.empty-space {
+    height: 200px;
+}
+
+
+    
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .app-name,
     .instructions,
-    .body-element
+    .body-element,
     .search-container,
-    .search {
+    .search,
+    .calendar-container-from,
+    .calendar-container-to,
+    #from,
+    #to {
+        height: 75%;
+        width: 75%;
+        justify-content: center;
+    }};
+
+    .app-name {
+        height: 75%;
+        width: 100%;
+    };
+
+@media (max-width: 767px) {
+    .instructions,
+    .body-element,
+    .search-container,
+    .search,
+    .calendar-container-from,
+    .calendar-container-to,
+    #from,
+    #to {
         height: 50%;
         width: 50%;
     }
-}
+    .app-name {
+        height: 50%;
+        width: 100%;
+    }
+};

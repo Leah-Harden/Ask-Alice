@@ -94,33 +94,40 @@ button {
     padding: 10px;
     font-size: 15px;
 }
-
-@media (min-width: 500px) and (max-width: 1023px) {
-:root{
-    text-align: center
-    }};
-
-
-    
-/*
 @media (min-width: 768px) and (max-width: 1023px) {
-    .main-container,
-    img,
-    .hr,
-    .comment,
-    .font-display {
+    .instructions,
+    .body-element,
+    .search-container,
+    .search,
+    .calendar-container-from,
+    .calendar-container-to,
+    #from,
+    #to {
         height: 75%;
         width: 75%;
+        justify-content: center;
     }};
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .main-container,
-    img,
-    .hr,
-    .comment,
-    .font-display{
+    .app-name {
+        height: 75%;
+        width: 100%;
+    };
+
+@media (max-width: 767px) {
+    .instructions,
+    .body-element,
+    .search-container,
+    .search,
+    .calendar-container-from,
+    .calendar-container-to,
+    #from,
+    #to {
         height: 50%;
         width: 50%;
     }
-}
-*/
+    .app-name {
+        height: 50%;
+        width: 100%;
+    }
+};
+
