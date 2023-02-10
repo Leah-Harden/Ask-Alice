@@ -1,4 +1,98 @@
+button {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.body-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rabbit {
+    width: 20%;
+    height: 20%;
+    transform: rotate(11deg);
+    margin: 50px;
+}
+
 .app-name {
-    height: 50px;
-    border-bottom: 5px red;
+    height: 75px;
+    background-color: whitesmoke;
+    border-bottom: solid 5px red;
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    font-size: xx-large;
+    justify-content: center;
+}
+
+.instructions {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+
+.calendar-container-from {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.calendar-container-to {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(245, 120, 17);
+    width: 180px;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+}
+
+.uk-link:hover {
+    color: beige;
+    background-color: red;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .app-name,
+    .instructions,
+    .body-element
+    .search-container,
+    .search {
+        height: 75%;
+        width: 75%;
+    }};
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .app-name,
+    .instructions,
+    .body-element
+    .search-container,
+    .search {
+        height: 50%;
+        width: 50%;
+    }
 }
