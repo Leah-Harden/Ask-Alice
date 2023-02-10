@@ -1,4 +1,3 @@
-
 $(function () {
     var dateFormat = "mm/dd/yy",
         from = $("#from")
@@ -43,20 +42,12 @@ $(".search").on("click", function (event) {
     // using dayjs changed format of date to one API can use
     var date1string = dayjs(date1).format("YYYYMMDD")
     var date2string = dayjs(date2).format("YYYYMMDD")
-    fetch('https://api.fda.gov/drug/enforcement.json?search=report_date:[' + date1string + '+TO+' + date2string + ']&limit=5')
+    fetch('https://api.fda.gov/drug/enforcement.json?search=report_date:[' + date1string + '+TO+' + date2string + ']&limit=20')
         .then((response) => response.json())
         .then((data) => {
             console.log(data)
             // console.log(data)
             // console.log(data)
-        });
-
-
-function search(){
-
-    fetch('https://api.fda.gov/drug/enforcement.json?search=report_date:[20040101+TO+20131231]&limit=1')
-    .then((response) => response.json())
-    .then((data) => console.log(data));
-}
-
-search();
+        }); 
+        
+})
