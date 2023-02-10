@@ -7,23 +7,35 @@
 
 
 .title {
-    margin: 70px 150px 20px 150px;
+    margin: 70px 50px 20px 50px;
     font-size:50px ;
     text-align: center;
 }
 
 .main-container{
-    margin: 0px 250px 00px 250px;
+    text-align: center;
+    margin: 0px 100px 0px 100px;
 
+}
+
+.flow {
+    max-width: 2000px;
+}
+
+aside {
+    float: left;
 }
 hr {
     height: 8px;
-
+    min-width: 200px;
 }
 
 img {
-    width: 300px;
-    height: 400px;
+    min-width: 400px;
+    min-height: 425px;
+    max-width: 300px;
+    max-height: 400px;
+
     margin: 110px 40px 0px 40px;
     border: #362412 solid 8px;
     border-radius: 5px;
@@ -46,6 +58,8 @@ img {
     border-radius: 10px;
     padding: 35px;
     font-size: 20px;
+    min-width: 300px;
+    text-overflow: scroll;
 }
 
 .brown {
@@ -80,3 +94,33 @@ button {
     padding: 10px;
     font-size: 15px;
 }
+
+@media (min-width: 500px) and (max-width: 1023px) {
+:root{
+    text-align: center
+    }};
+
+
+    
+/*
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-container,
+    img,
+    .hr,
+    .comment,
+    .font-display {
+        height: 75%;
+        width: 75%;
+    }};
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-container,
+    img,
+    .hr,
+    .comment,
+    .font-display{
+        height: 50%;
+        width: 50%;
+    }
+}
+*/
