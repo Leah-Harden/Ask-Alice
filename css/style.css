@@ -11,6 +11,18 @@ button {
     align-items: center;
 }
 
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+.font-display-bold {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.brown {
+    color: #362412;
+}
+
 .rabbit {
     width: 20%;
     height: 20%;
@@ -31,8 +43,10 @@ button {
 
 .instructions {
     display: flex;
-    justify-content: flex-end;
-    float: right;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .search-container {

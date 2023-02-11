@@ -5,31 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ask Alice Landing Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Sofia" rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/uikit.css" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
-<body>
-    <header class="app-name">
-        <h1>Ask Alice!</h1>
-        <hr>
+
+<body class="font-display">
+    <header class="app-name brown font-display-bold">
+        <h1 class="brown font-display">Ask Alice!</h1>
     </header>
     <div class="body-element">
-        <h3 class="instructions">A search engine for recalled prescription drugs.</h3>
-        <div class="instructions">To go down the Rabbit Hole, select two dates between 2004 and now!</div>
-        <img src="./photos/bunny.jpg"alt="picture of rabbit" class="rabbit">
+        <div class="instructions">
+            <h3 class="brown font-display">A search engine for recalled prescription drugs.</h3>
+            <h5 class="brown font-display-bold">To go down the Rabbit Hole, scroll down and select two dates below!</h5>
+        </div>
+            <img src="./photos/bunny.jpg"alt="picture of rabbit" class="rabbit">
         <div class="search-container">
             <div class="calendar-container-from">
-                <h5>Start Date</h5>
+                <h5 class="brown font-display-bold">Start Date</h5>
                 <input id="from"></input>
             </div>
-            <h3>TO</h3>
+            <h3 class="brown font-display-bold">TO</h3>
             <div class ="calendar-container-to">
-                <h5>End Date</h5>
+                <h5 class="brown font-display-bold">End Date</h5>
                 <input id="to"></input>
             </div>
         </div>
-        <button class="search uk-link">Recall Rabbit Hole</button>
+        <button class="search uk-link brown font-display">Recall Rabbit Hole</button>
     </div>
     <footer class="empty-space"></footer>
 
