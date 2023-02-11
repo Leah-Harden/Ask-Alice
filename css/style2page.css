@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 75px;
+    height: 10%;
     background-color: whitesmoke;
     border-bottom: solid 5px red;
     padding: 7px;
@@ -18,6 +18,7 @@
 aside {
     display: flex;
     flex-direction: column;
+    float: left;
 }
 
 .product-information {
@@ -51,10 +52,6 @@ aside {
 
 .flow {
     max-width: 2000px;
-}
-
-aside {
-    float: left;
 }
 hr {
     height: 8px;
