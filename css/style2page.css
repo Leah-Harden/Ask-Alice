@@ -5,22 +5,41 @@
     --brown: #362412;
 }
 
-header {
+.header-element {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 75px;
+    background-color: whitesmoke;
+    border-bottom: solid 5px red;
+    padding: 7px;
+}
 
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.drug-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
     font-size:50px ;
-    justify-content: center;
+    width: 100vw;
+    text-align: center;
 }
 
 .main-container{
     text-align: center;
     margin: 0px 100px 0px 100px;
-
+    display: flex;
 }
 
 .image-container {
@@ -42,8 +61,8 @@ hr {
     min-width: 200px;
 }
 
-.right{
-    text-align: right;
+.center{
+    text-align: center;
 }
 .red {
     background-color: #F57676;
@@ -75,6 +94,11 @@ hr {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
+
+h2 {
+    justify-content: center;
+    align-items: center;
+}
 h4 {
     font-size: 30px;
     margin: 0% ;
@@ -102,6 +126,7 @@ button {
     width: 5%;
     height: 5%;
     transform: rotate(11deg);
+    margin-left: 10px;
 }
 
 #image-api {
@@ -109,6 +134,7 @@ button {
     border-radius: 5px;
     width: 50%;
     height: 50%;
+    justify-content: center;
 }
 
 #api-source {
