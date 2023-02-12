@@ -42,29 +42,12 @@ $(".search").on("click", function (event) {
     // using dayjs changed format of date to one API can use
     var date1string = dayjs(date1).format("YYYYMMDD")
     var date2string = dayjs(date2).format("YYYYMMDD")
-    fetch('https://api.fda.gov/drug/enforcement.json?search=report_date:[' + date1string + '+TO+' + date2string + ']&limit=20')
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data)
-            var country = data.results[0].country;
-            var productdescription = data.results[0].product_description;
-            var reason = data.results[0].reason_for_recall;
-            var inidate = data.results[0].recall_initiation_date;
-            var firm = data.results[0].recalling_firm;
 
-            localStorage.setItem("country", country);
-            localStorage.setItem("product", productdescription);
-            localStorage.setItem("reason", reason); 
-            localStorage.setItem("date", inidate);
-            localStorage.setItem("firm", firm);
-            
-        }); 
-        showRecalls();
-        
-})
-// This function re-directs the index.html to the search-results.html
-var showRecalls = function (){
-
-    document.location.replace('./search-results.html');
-
-}
+    if (date1string===null && date2string===null){
+        console.log("no-date-selected")
+    }
+        else {
+        // This function re-directs the index.html to the search-results.html
+        document.location.replace('./search-results.html?'+date1string+'&'+date2string);
+    }
+});
