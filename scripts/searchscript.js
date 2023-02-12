@@ -14,8 +14,10 @@ async function CuratedPhotos(){
     const response=await data.json();   //convert the response to json 
     // console.log(response);
     // console.log(response.photos[0].url);
-photos = response.photos[0].url;
+photos = response.photos[0].src;
+console.log(response)
 console.log (photos);
+$("#image-api").attr("src", photos);
 }
 
 CuratedPhotos();
@@ -30,6 +32,12 @@ function callApi(){
     console.log(datestring1)
     console.log(datestring2)
 
+    var date1 = dayjs(datestring1).format("YYYY/MM/DD")
+    var date2 = dayjs(datestring2).format("YYYY/MM/DD")
+    console.log(date1)
+    console.log(date2)
+
+    $("#dates").text(date1)
 
     fetch('https://api.fda.gov/drug/enforcement.json?search=report_date:['+ datestring1 + '+TO+' + datestring2+']&limit=5')
     .then((response) => response.json())
@@ -37,32 +45,29 @@ function callApi(){
         console.log(data)
         var country = data.results[0].country;
         var productdescription = data.results[0].product_description;
+        console.log(productdescription)
         var reason = data.results[0].reason_for_recall;
         var inidate = data.results[0].recall_initiation_date;
         var firm = data.results[0].recalling_firm;
-        
-        localStorage.setItem("country", country);
-        localStorage.setItem("product", productdescription);
-        localStorage.setItem("reason", reason); 
-        localStorage.setItem("date", inidate);
-        localStorage.setItem("firm", firm);
+        var status = data.results[0].status;
+
+        $("#place").text(country);
+        $(".product_description").text(productdescription);
+        $(".reason").text(reason);
+        $("#spanStatus").text(status);
+
+
+        // localStorage.setItem("country", country);
+        // localStorage.setItem("product", productdescription);
+        // localStorage.setItem("reason", reason); 
+        // localStorage.setItem("date", inidate);
+        // localStorage.setItem("firm", firm);
         
                 }
         )
-        
-}
+    }
+      
+    $("#backbtn").on("click", function (event) {
 
-
-
-
-
-
-
-
-var queryString = decodeURIComponent(window.location.search);
-queryString = queryString.substring(1);
-var queries = queryString.split("&");
-for (var i = 0; i < queries.length; i++)
-{
-document.write(queries[i] + "<br>");
-}
+            document.location.replace('./index.html');
+        })
