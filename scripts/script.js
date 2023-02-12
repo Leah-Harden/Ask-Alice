@@ -66,5 +66,13 @@ $(".search").on("click", function (event) {
 var showRecalls = function (){
 
     document.location.replace('./search-results.html');
+}
 
+var dateOne="20021212";
+var dateTwo="20021212";
+var queryString = "?date1=" + dateOne + "&date2=" + dateTwo;
+
+function changePage() {
+
+    window.location.href = "search-results.html" + queryString;
 }
