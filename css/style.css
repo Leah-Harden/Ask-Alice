@@ -1,7 +1,9 @@
 button {
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
 }
 
 .body-element {
@@ -9,6 +11,18 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+.font-display-bold {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.brown {
+    color: #362412;
 }
 
 .rabbit {
@@ -21,9 +35,10 @@ button {
 .app-name {
     height: 75px;
     background-color: whitesmoke;
-    border-bottom: solid 5px red;
+    border-bottom: solid 8px #F57676;
     display: flex;
     padding: 7px;
+    margin: 1%;
     align-items: center;
     font-size: xx-large;
     justify-content: center;
@@ -31,8 +46,10 @@ button {
 
 .instructions {
     display: flex;
-    justify-content: flex-end;
-    float: right;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .search-container {
@@ -42,6 +59,8 @@ button {
     background-color: whitesmoke;
     height: 285px;
     align-items: flex-start;
+    padding: 1%;
+    margin: 5px;
 }
 
 .calendar-container-from {

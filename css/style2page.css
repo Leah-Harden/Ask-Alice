@@ -5,16 +5,49 @@
     --brown: #362412;
 }
 
+.header-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    border-bottom: solid 8px #F57676;
+    padding: 7px;
+    margin: 1%;
+}
+
+aside {
+    float: left;
+}
+
+.product-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.drug-info {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
 
 .title {
-    margin: 70px 50px 20px 50px;
     font-size:50px ;
+    width: 100vw;
     text-align: center;
 }
 
 .main-container{
     text-align: center;
     margin: 0px 100px 0px 100px;
+    display: flex;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
 
 }
 
@@ -22,27 +55,13 @@
     max-width: 2000px;
 }
 
-aside {
-    float: left;
-}
 hr {
     height: 8px;
     min-width: 200px;
 }
 
-img {
-    min-width: 400px;
-    min-height: 425px;
-    max-width: 300px;
-    max-height: 400px;
-
-    margin: 110px 40px 0px 40px;
-    border: #362412 solid 8px;
-    border-radius: 5px;
+.center{
     text-align: center;
-}
-.right{
-    text-align: right;
 }
 .red {
     background-color: #F57676;
@@ -60,10 +79,15 @@ img {
     font-size: 20px;
     min-width: 300px;
     text-overflow: scroll;
+    background-color: whitesmoke;
 }
 
 .brown {
     color: #362412;
+}
+
+.link {
+    padding: 10px;
 }
 
 .font-display {
@@ -72,6 +96,11 @@ img {
 .font-display-bold {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
+}
+
+h2 {
+    justify-content: center;
+    align-items: center;
 }
 h4 {
     font-size: 30px;
@@ -87,13 +116,37 @@ h5{
     font-size: 25px;
 }
 button {
-    border-radius: 10px;
-    border: #F57676 1px solid;
-    width: 200px;
-    text-align: left;
-    padding: 10px;
-    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(245, 120, 17);
+    width: 180px;
+    padding: 5px;
+    border-radius: 3px;
+    justify-content: center;
 }
+
+#rabbit {
+    justify-content: flex-start;
+    width: 5%;
+    height: 100%;
+    transform: rotate(11deg);
+    margin-left: 10px;
+}
+
+#image-api {
+    border: #362412 solid 8px;
+    border-radius: 5px;
+    margin-top: 10%;
+    width: 75%;
+    height: 75%;
+    justify-content: center;
+}
+
+#api-source {
+    justify-content: center;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .instructions,
     .body-element,

@@ -51,3 +51,22 @@ $(".search").on("click", function (event) {
         document.location.replace('./search-results.html?'+date1string+'&'+date2string);
     }
 });
+
+            localStorage.setItem("country", country);
+            localStorage.setItem("product", productdescription);
+            localStorage.setItem("reason", reason); 
+            localStorage.setItem("date", inidate);
+            localStorage.setItem("firm", firm);
+            
+        }); 
+        showRecalls();
+        
+})
+// This function re-directs the index.html to the search-results.html
+var showRecalls = function (){
+
+    document.location.replace('./search-results.html');
+}
+
+
+
