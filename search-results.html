@@ -14,7 +14,7 @@
 <body>
     <header class="header-element">
         <img id="rabbit" src="./photos/bunny.jpg"alt="picture of rabbit" class="rabbit">
-        <h2 class="title brown font-display-bold"> 2004/6/12 - 2013/7/11</h2>
+        <h2 id="dates" class="title brown font-display-bold"> 2004/6/12 - 2013/7/11</h2>
     </header>
 
 
@@ -30,21 +30,21 @@
         <div class= "uk-container uk-width-2-3 uk-align-right drug-info">
             <div class="right">
                 <h4 class="brown font-display" id="place">PA , Chesterbrook</h4>
-                <h3  class="brown font-display-bold" id="status">status: "Terminated"</h3>
+                <h3  class="brown font-display-bold" id="status">status: <span id="spanStatus">"Terminated"</span></h3>
             </div>
             <div class="comment uk-margin-small right" id="box">
                 <h5 class="uk-text-bold">product_description:</h5>
-                <p id="product_description:">"Ifosfamide Injection 3g/60 mL, Single dose vial, Rx only, Sterile, 
+                <p class = "product_description" id="product_description:">"Ifosfamide Injection 3g/60 mL, Single dose vial, Rx only, Sterile, 
                     For Intravenous Use, Refrigerate at 2-8 degrees celcius, Distributed 
                 by Pfizer Labs, Division of Pfizer Inc., New York, NY 10017, NDC 
                 0069-4496-22"</p>
             </div>
             <div  class="comment uk-margin-small right" id="box2">
                 <h5 class="uk-text-bold">Reason for recall:</h5>
-                <p id="product_description:">"Temperature abuse: Certain vials of Ifosfamide IV products were
+                <p class = "reason" id="reason">"Temperature abuse: Certain vials of Ifosfamide IV products were
                     not refrigerated at certain Amerisource Bergen Drug Corp distribution centers."</p>
             </div>
-            <button class="back-button uk-link">Back to Search</button>
+            <button id = "backbtn" class="back-button uk-link">Back to Search</button>
             </div>
             
         </div>
