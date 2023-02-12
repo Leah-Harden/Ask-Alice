@@ -14,9 +14,9 @@ async function CuratedPhotos(){
     const response=await data.json();   //convert the response to json 
     // console.log(response);
     // console.log(response.photos[0].url);
-photos = response.photos[0].src;
-console.log(response)
-console.log (photos);
+photos = response.photos[0].src.medium;
+console.log(response.photos[0].src.medium)
+
 $("#image-api").attr("src", photos);
 }
 
@@ -37,12 +37,13 @@ function callApi(){
     console.log(date1)
     console.log(date2)
 
-    $("#dates").text(date1)
+    $("#dates").text(date1 + " - " + date2)
 
     fetch('https://api.fda.gov/drug/enforcement.json?search=report_date:['+ datestring1 + '+TO+' + datestring2+']&limit=5')
     .then((response) => response.json())
     .then((data) => {
         console.log(data)
+        
         var country = data.results[0].country;
         var productdescription = data.results[0].product_description;
         console.log(productdescription)
@@ -66,7 +67,7 @@ function callApi(){
                 }
         )
     }
-      
+
     $("#backbtn").on("click", function (event) {
 
             document.location.replace('./index.html');
