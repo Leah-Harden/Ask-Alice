@@ -11,22 +11,18 @@
     <link href="css/style2page.css" rel="stylesheet">
     <title>Rabbit Hole Results</title>
 </head>
+<header class="header-element">
+    <img id="rabbit" src="./photos/bunny.jpg"alt="picture of rabbit" class="rabbit">
+    <h2 id = "dates" class="title brown font-display-bold"> 2004/6/12 - 2013/7/11</h2>
+</header>
 <body>
-    <header class="header-element">
-        <img id="rabbit" src="./photos/bunny.jpg"alt="picture of rabbit" class="rabbit">
-        <h2 id = "dates" class="title brown font-display-bold"> 2004/6/12 - 2013/7/11</h2>
-    </header>
-
-
+    <body-container>
         <aside>
             <div class="image-container">
-                <img id="image-api" src="https://placeholder.com/assets/images/150x150-500x500.png" alt="meds" id="image-meds">
+                <img id="image-api" alt="meds" id="image-meds">
                 <a id="api-source" href="https://www.pexels.com" class="link">Photos provided by Pexels</a>
             </div>
         </aside>
-        </div>
-
-
         <div class= "uk-container uk-width-2-3 uk-align-right drug-info">
             <div class="right">
                 <h4 class="brown font-display" id="place">PA , Chesterbrook</h4>
@@ -44,19 +40,19 @@
                 <p id="reason">"Temperature abuse: Certain vials of Ifosfamide IV products were
                     not refrigerated at certain Amerisource Bergen Drug Corp distribution centers."</p>
             </div>
-            <button id = "backbtn" class="back-button uk-link">Back to Search</button>
-            </div>
-            
+            <div class ="nav-container">
+                <button id ="backbtn" class="uk-link">Continue Down the Rabbit Hole!</button>
+                <!-- <input type="button" value="Back to Search Dates" onclick="location.href='index.html'"/> -->
+                <button><a href="./index.html" class="back-button uk-link">Back to Search Dates</a></button>
+            </div>     
         </div>
-
-
-        <!-- image api -->
-        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-        <script
-        src="https://code.jquery.com/jquery-3.6.3.js"
-        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-        crossorigin="anonymous"></script>
-        <script src = "https://releases.jquery.com/git/ui/jquery-ui-git.js"></script>
-        <script src="./scripts/searchscript.js"></script>     
+    <!-- image api -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+    <script src = "https://releases.jquery.com/git/ui/jquery-ui-git.js"></script>
+    <script src="./scripts/searchscript.js"></script>     
 </body>
 </html>

@@ -15,6 +15,31 @@
     margin: 1%;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.uk-link:hover {
+    color: beige;
+    background-color: #F57676;
+}
+
+.back-button{
+    color: beige;
+    background-color: #F57676;
+}
+
+.back-button:hover {
+    color: white;
+    background-color: rgb(245, 120, 17);
+}
+
 aside {
     float: left;
 }
@@ -120,7 +145,7 @@ button {
     justify-content: center;
     color: white;
     background-color: rgb(245, 120, 17);
-    width: 180px;
+    width: 225px;
     padding: 5px;
     border-radius: 3px;
     justify-content: center;
