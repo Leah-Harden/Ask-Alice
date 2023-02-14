@@ -74,7 +74,6 @@ aside {
     align-items: center;
     margin: 4%;
     max-width: 500px;
-
 }
 
 .flow {
@@ -138,6 +137,13 @@ h3 {
     margin: 0%
 }
 
+
+.newInfo {
+text-align: right;
+}
+
+
+
 h5{
     font-size: 25px;
 }
@@ -150,6 +156,7 @@ button {
     padding: 5px;
     border-radius: 3px;
     justify-content: center;
+    
 }
 
 #rabbit {
@@ -160,6 +167,8 @@ button {
     min-height: 40%;
     transform: rotate(11deg);
     margin-left: 10px;
+    min-width: 2%;
+    min-height: 40%;
 }
 
 #image-api {
