@@ -1,9 +1,12 @@
 var api_key = "xlozztFokJwpqfVlSdbxiEsnNSdEQwdTvLg0rjDvPh6lR95dFqOKpQpC";
 var photos;
+var photolimit = 10; 
+var x = Math.floor(Math.random()*20);
+var p = Math.floor(Math.random()*10);
 
 async function CuratedPhotos(){
     // fetch the data from api
-    const data=await fetch(`https://api.pexels.com/v1/search?query=medicine&total_results=1`, 
+    const data=await fetch(`https://api.pexels.com/v1/search?query=medicine&total_results=10`, 
     {
         method: "GET",
         headers: {
@@ -14,12 +17,12 @@ async function CuratedPhotos(){
     const response=await data.json();   //convert the response to json 
     // console.log(response);
     // console.log(response.photos[0].url);
-photos = response.photos[0].src.medium;
-console.log(response.photos[0].src.medium)
 
+photos = response.photos[p].src.medium;
+console.log(p)
+    
 $("#image-api").attr("src", photos);
 }
-
 CuratedPhotos();
 callApi();
 
@@ -34,24 +37,25 @@ function callApi(){
 
     var date1 = dayjs(datestring1).format("YYYY/MM/DD")
     var date2 = dayjs(datestring2).format("YYYY/MM/DD")
+
     console.log(date1)
     console.log(date2)
 
     $("#dates").text(date1 + " - " + date2)
 
-    fetch('https://api.fda.gov/drug/enforcement.json?search=report_date:['+ datestring1 + '+TO+' + datestring2+']&limit=5')
+    fetch('https://api.fda.gov/drug/enforcement.json?search=report_date:['+ datestring1 + '+TO+' + datestring2+']&limit=20')
     .then((response) => response.json())
     .then((data) => {
         console.log(data)
-        
-        var country = data.results[0].country;
-        var productdescription = data.results[0].product_description;
+        console.log(x)
+        var country = data.results[x].country;
+        var productdescription = data.results[x].product_description;
         console.log(productdescription)
-        var reason = data.results[0].reason_for_recall;
-        var inidate = data.results[0].recall_initiation_date;
-        var firm = data.results[0].recalling_firm;
-        var status = data.results[0].status;
-
+        var reason = data.results[x].reason_for_recall;
+        var inidate = data.results[x].recall_initiation_date;
+        var firm = data.results[x].recalling_firm;
+        var status = data.results[x].status;
+    
         $("#place").text(country);
         $(".product_description").text(productdescription);
         $(".reason").text(reason);
@@ -68,7 +72,6 @@ function callApi(){
         )
     }
 
-    $("#backbtn").on("click", function (event) {
+    // $("#continuebtn").on("click", function (event) {
 
-            document.location.replace('./index.html');
-        })
+    //     })
