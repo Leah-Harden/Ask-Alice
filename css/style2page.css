@@ -163,6 +163,8 @@ button {
     justify-content: flex-start;
     width: 5%;
     height: 100%;
+    min-width: 2%;
+    min-height: 40%;
     transform: rotate(11deg);
     margin-left: 10px;
     min-width: 2%;
