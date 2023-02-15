@@ -161,12 +161,18 @@ button {
 
 footer {
     display: flex;
+    display: inline;
+    margin-top: 3%;
+    justify-content: space-between;
+
 }
 
 .footer-text {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    float: right;
+    
 }
 
 #rabbit {
@@ -180,14 +186,14 @@ footer {
 }
 
 .rabbit-2 {
-    width: 25%;
-    height: 25%;
+    width: 15.5%;
+    height: 90%;
     transform: rotate(11deg);
 }
 
 .body-container {
     display: flex;
-
+flex-wrap: wrap;
 }
 
 .left-column {
