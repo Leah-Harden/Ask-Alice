@@ -16,8 +16,8 @@
     <h2 id = "dates" class="title brown font-display-bold"> 2004/6/12 - 2013/7/11</h2>
 </header>
 <body>
-    <body-container>
-        <aside>
+    <div class="body-container">
+        <aside class="left-column">
             <div class="image-container">
                 <img id="image-api" alt="meds" id="image-meds">
                 <a id="api-source" href="https://www.pexels.com" class="link">Photos provided by Pexels</a>
@@ -29,12 +29,14 @@
 
                 <div class="right">
                     <h4 class="brown font-display" id="place">PA , Chesterbrook</h4>
-                    <h3  class="brown font-display-bold" id="status">status: <span id="spanStatus">"Terminated"</span></h3>
+                    <h3  class="brown font-display-bold" id="status">Status: <span id="spanStatus">"Terminated"</span></h3>
                 </div>
                 <div class="newInfo uk-flex-right">
+
                     <h4 class="brown font-display">Date of recall: <span id="iniDate">1/1/12</span> </h4>
                     <h3  class="brown font-display-bold" id="">Firm: <span id="firm">Company</span></h3>
                     <h2  class="brown font-display" id="">Total Recalls: <span id="count">5</span></h2>
+
                 </div>
 
             </div>
@@ -46,15 +48,27 @@
                 0069-4496-22"</p>
             </div>
             <div  class="comment uk-margin-small right" id="box2">
-                <h5 class="uk-text-bold">Reason for recall:</h5>
-                <p class="reason" id="reason">"Temperature abuse: Certain vials of Ifosfamide IV products were
+                <h5 class="brown uk-text-bold">Reason for recall:</h5>
+                <p class="brown reason" id="reason">"Temperature abuse: Certain vials of Ifosfamide IV products were
                     not refrigerated at certain Amerisource Bergen Drug Corp distribution centers."</p>
             </div>
             <div class ="nav-container">
                 <button id ="continuebtn" class="uk-link">Continue Down the Rabbit Hole!</button>
-                <!-- <input type="button" value="Back to Search Dates" onclick="location.href='index.html'"/> -->
-                <button><a href="./index.html" class="back-button uk-link">Back to Search Dates</a></button>
-            </div>     
+                <button class="uk-link back-button"><a href="./index.html">Back to Search Dates</a></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="./photos/bunny.jpg"alt="picture of rabbit" class="rabbit-2">
+        </div>
+        <div class="footer-text">
+            <!-- To be coded in Java. Append the "There are" () "amount of recalls in that time frame" -->
+            <h5 class="brown uk-text-large">"There are " + () + " amount of recalls in that time frame"</h5>
+            <h4 class="brown uk-text-large uk-text-bold">What do you want to do now?</h4>
+        </div>
+    
+    </footer>
         </div>  
     <!-- image api -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>

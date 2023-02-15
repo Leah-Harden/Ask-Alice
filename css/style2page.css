@@ -31,13 +31,13 @@
 }
 
 .back-button{
+    background-color: rgb(245, 120, 17);
     color: beige;
-    background-color: #F57676;
 }
 
 .back-button:hover {
     color: white;
-    background-color: rgb(245, 120, 17);
+    background-color: #F57676;
 }
 
 aside {
@@ -159,6 +159,16 @@ button {
     
 }
 
+footer {
+    display: flex;
+}
+
+.footer-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #rabbit {
     justify-content: flex-start;
     width: 5%;
@@ -167,8 +177,23 @@ button {
     min-height: 40%;
     transform: rotate(11deg);
     margin-left: 10px;
-    min-width: 2%;
-    min-height: 40%;
+}
+
+.rabbit-2 {
+    width: 25%;
+    height: 25%;
+    transform: rotate(11deg);
+}
+
+.body-container {
+    display: flex;
+
+}
+
+.left-column {
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 #image-api {
