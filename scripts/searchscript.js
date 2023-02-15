@@ -68,18 +68,23 @@ function callApi() {
         console.log(data.results.length);
         console.log(x)
         var country = data.results[x].country;
-        var productdescription = data.results[x].product_description;
-        console.log(productdescription)
+        var productDescription = data.results[x].product_description;
+        console.log(productDescription)
         var reason = data.results[x].reason_for_recall;
         var inidate = data.results[x].recall_initiation_date;
         var firm = data.results[x].recalling_firm;
         var status = data.results[x].status;
-        // var recallcount = data.results.length;
+        var recallcount = data.results.length;
+
+        var inidate1 = dayjs(inidate).format("YYYY/MM/DD")
+
         $("#place").text(country);
-        $(".product_description").text(productdescription);
+        $(".product_description").text(productDescription);
         $(".reason").text(reason);
         $("#spanStatus").text(status);
-        // $("#count").text(recallcount);
+        $("#iniDate").text(inidate1);
+        $("#firm").text(firm);
+        $("#count").text(recallcount);
     }
 
     // localStorage.setItem("country", country);
