@@ -169,9 +169,10 @@ footer {
 
 .footer-text {
     flex-direction: column;
-    justify-content: flex-end;
+    text-align: right;
     align-items: center;
     float: right;
+    padding-top: 
     
 }
 
