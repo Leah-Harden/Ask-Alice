@@ -85,6 +85,7 @@ function callApi() {
         $("#iniDate").text(inidate1);
         $("#firm").text(firm);
         $("#count").text(recallcount);
+        $("#count2").text(recallcount);
     }
 
     // localStorage.setItem("country", country);
