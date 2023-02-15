@@ -172,8 +172,20 @@ footer {
     text-align: right;
     align-items: center;
     float: right;
-    padding-top: 
+    padding-top: 15px;
+    border: solid whitesmoke 5px;
+    border-radius: 10px;
+    padding: 35px;
     
+}
+
+.left-column {
+    height: 100%;
+    align-items: center;
+}
+
+.center-count {
+    text-align: center;
 }
 
 #rabbit {
@@ -216,19 +228,18 @@ flex-wrap: wrap;
     justify-content: center;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .instructions,
-    .body-element,
-    .search-container,
-    .search,
-    .calendar-container-from,
-    .calendar-container-to,
-    #from,
-    #to {
+/* @media (min-width: 768px) and (max-width: 1023px) {
+    body
+    {
+        display: flex-column;
+        justify-content: center;
         height: 75%;
         width: 75%;
-        justify-content: center;
     }};
+
+    .body-container {
+        flex-direction: column;
+    }
 
     .app-name {
         height: 75%;
@@ -252,4 +263,4 @@ flex-wrap: wrap;
         width: 100%;
     }
 };
-
+ */
