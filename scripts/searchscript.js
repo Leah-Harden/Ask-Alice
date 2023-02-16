@@ -35,8 +35,8 @@ function callApi() {
     var datestring2 = datestring.split("&")[1];
     console.log(datestring1)
     console.log(datestring2)
-    var date1 = dayjs(datestring1).format("YYYY/MM/DD")
-    var date2 = dayjs(datestring2).format("YYYY/MM/DD")
+    var date1 = dayjs(datestring1).format("MM/DD/YYYY")
+    var date2 = dayjs(datestring2).format("MM/DD/YYYY")
 
     console.log(date1)
     console.log(date2)
@@ -55,6 +55,7 @@ function callApi() {
                     // .then((data) => {
             })}
             else {
+                document.location.replace('./error-page.html');
                 // document.location.replace('./index.html');
                 console.log("error")
             }
@@ -76,7 +77,7 @@ function callApi() {
         var status = data.results[x].status;
         var recallcount = data.results.length;
 
-        var inidate1 = dayjs(inidate).format("YYYY/MM/DD")
+        var inidate1 = dayjs(inidate).format("MM/DD/YYYY")
 
         $("#place").text(country);
         $(".product_description").text(productDescription);
@@ -84,14 +85,13 @@ function callApi() {
         $("#spanStatus").text(status);
         $("#iniDate").text(inidate1);
         $("#firm").text(firm);
-        $("#count").text(recallcount);
         $("#count2").text(recallcount);
     }
 
     // localStorage.setItem("country", country);
     // localStorage.setItem("product", productdescription);
     // localStorage.setItem("reason", reason); 
-    // localStorage.setItem("date", inidate);
+    // localStorage.setItem("date", inidate1);
     // localStorage.setItem("firm", firm);
 }
 

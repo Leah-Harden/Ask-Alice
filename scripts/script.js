@@ -4,7 +4,11 @@ $(function () {
             .datepicker({
                 defaultDate: "+1w",
                 changeMonth: true,
-                numberOfMonths: 1
+                numberOfMonths: 1,
+                changeYear: true,
+                yearRange: "2004:2023",
+                maxDate: 0
+                
             })
             .on("change", function () {
                 console.log(this)
@@ -13,7 +17,10 @@ $(function () {
         to = $("#to").datepicker({
             defaultDate: "+1w",
             changeMonth: true,
-            numberOfMonths: 1
+            changeYear: true,
+            numberOfMonths: 1,
+            yearRange: "2004:2023",
+            maxDate: 0
         })
             .on("change", function () {
                 from.datepicker("option", "maxDate", getDate(this));
