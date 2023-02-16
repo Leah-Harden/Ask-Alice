@@ -44,6 +44,12 @@ aside {
     float: left;
 }
 
+.text-past {
+    width: 300px;
+    background-color: whitesmoke;
+    padding: 3%;
+}
+
 .product-information {
     display: flex;
     flex-direction: column;
@@ -163,7 +169,8 @@ footer {
     display: flex;
     display: inline;
     margin-top: 3%;
-    justify-content: space-between;
+
+    justify-content: center;
 
 }
 
@@ -202,6 +209,8 @@ footer {
     width: 15.5%;
     height: 90%;
     transform: rotate(11deg);
+    margin: 2%;
+
 }
 
 .body-container {
@@ -213,6 +222,7 @@ flex-wrap: wrap;
     height: 100vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 #image-api {
