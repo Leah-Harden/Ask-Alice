@@ -44,6 +44,12 @@ aside {
     float: left;
 }
 
+.text-past {
+    width: 300px;
+    background-color: whitesmoke;
+    padding: 3%;
+}
+
 .product-information {
     display: flex;
     flex-direction: column;
@@ -213,6 +219,7 @@ flex-wrap: wrap;
     height: 100vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 #image-api {
