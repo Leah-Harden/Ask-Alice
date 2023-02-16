@@ -60,7 +60,7 @@ function callApi() {
                 console.log("error")
             }
         })
-
+    }
 
     var rabbithole = function (data) {
         var x = Math.floor(Math.random() * 20);
@@ -86,19 +86,24 @@ function callApi() {
         $("#iniDate").text(inidate1);
         $("#firm").text(firm);
         $("#count2").text(recallcount);
+
+        localStorage.setItem("product", productDescription);
     }
 
     // localStorage.setItem("country", country);
-    // localStorage.setItem("product", productdescription);
     // localStorage.setItem("reason", reason); 
     // localStorage.setItem("date", inidate1);
     // localStorage.setItem("firm", firm);
-}
 
+function lastRecall () {
+    var lastOne = localStorage.getItem("product");
+    $(".text-past").text(lastOne);
+}
     $("#continuebtn").on("click", function(event)    {
 
         callApi();
         CuratedPhotos();
+        lastRecall();
 
         // fetch('https://api.fda.gov/drug/enforcement.json?search=report_date:[' + datestring1 + '+TO+' + datestring2 + ']&limit=200')
         // .then(function (response) {
