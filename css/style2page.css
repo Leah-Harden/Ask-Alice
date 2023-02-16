@@ -5,6 +5,52 @@
     --brown: #362412;
 }
 
+aside {
+    float: left;
+}
+
+hr {
+    height: 8px;
+    min-width: 200px;
+}
+
+h2 {
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 0% ;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 0%
+}
+
+h5{
+    font-size: 25px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(245, 120, 17);
+    width: 225px;
+    padding: 5px;
+    border-radius: 3px;
+    justify-content: center;  
+}
+
+footer {
+    display: flex;
+    display: inline;
+    margin-top: 3%;
+    justify-content: center;
+}
+
 .header-element {
     display: flex;
     flex-direction: row;
@@ -38,10 +84,6 @@
 .back-button:hover {
     color: white;
     background-color: #F57676;
-}
-
-aside {
-    float: left;
 }
 
 .text-past {
@@ -86,10 +128,6 @@ aside {
     max-width: 2000px;
 }
 
-hr {
-    height: 8px;
-    min-width: 200px;
-}
 
 .center{
     text-align: center;
@@ -124,54 +162,14 @@ hr {
 .font-display {
     font-family: 'Playfair Display', serif;
 }
+
 .font-display-bold {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
-h2 {
-    justify-content: center;
-    align-items: center;
-}
-h4 {
-    font-size: 30px;
-    margin: 0% ;
-}
-
-h3 {
-    font-size: 40px;
-    margin: 0%
-}
-
-
 .newInfo {
 text-align: right;
-}
-
-
-
-h5{
-    font-size: 25px;
-}
-button {
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-color: rgb(245, 120, 17);
-    width: 225px;
-    padding: 5px;
-    border-radius: 3px;
-    justify-content: center;
-    
-}
-
-footer {
-    display: flex;
-    display: inline;
-    margin-top: 3%;
-
-    justify-content: center;
-
 }
 
 .footer-text {
@@ -183,7 +181,6 @@ footer {
     border: solid whitesmoke 5px;
     border-radius: 10px;
     padding: 35px;
-    
 }
 
 .left-column {
@@ -195,6 +192,25 @@ footer {
     text-align: center;
 }
 
+.rabbit-2 {
+    width: 15.5%;
+    height: 90%;
+    transform: rotate(11deg);
+    margin: 2%;
+}
+
+.body-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 #rabbit {
     justify-content: flex-start;
     width: 5%;
@@ -203,26 +219,6 @@ footer {
     min-height: 40%;
     transform: rotate(11deg);
     margin-left: 10px;
-}
-
-.rabbit-2 {
-    width: 15.5%;
-    height: 90%;
-    transform: rotate(11deg);
-    margin: 2%;
-
-}
-
-.body-container {
-    display: flex;
-flex-wrap: wrap;
-}
-
-.left-column {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 #image-api {
@@ -238,39 +234,140 @@ flex-wrap: wrap;
     justify-content: center;
 }
 
-/* @media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 1024) and (max-width: 1844) {
+
     body
     {
         display: flex-column;
         justify-content: center;
-        height: 75%;
-        width: 75%;
-    }};
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
 
     .body-container {
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
-    .app-name {
-        height: 75%;
-        width: 100%;
-    };
+    .image-container,
+    .uk-container {
+        justify-content: center;
+    }
 
+    .font-display,
+    .font-display-bold,
+    .uk-text-bold,
+    .uk-text-large,
+    .product_description,
+    .reason {
+        font-size: 95%;
+    }
+
+    .footer-text{
+        display: flex;
+    }
+
+    .uk-flex-inline {
+        justify-content: space-between;
+    }
+
+    .drug-info {
+        text-align: center;
+        align-self: center;
+    }
+
+    .rabbit-2 {
+        min-width: 14px;
+        height: 80%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    body
+    {
+        display: flex-column;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .body-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .image-container,
+    .uk-container {
+        justify-content: center;
+    }
+
+    .font-display,
+    .font-display-bold,
+    .uk-text-bold,
+    .uk-text-large,
+    .product_description,
+    .reason {
+        font-size: 90%;
+    }
+
+    .footer-text{
+        display: flex;
+        font-size: 90%;
+    }
+
+    .uk-flex-inline {
+        justify-content: space-between;
+    }
+
+    .drug-info {
+        text-align: center;
+        align-self: center;
+    }
+}
+    
 @media (max-width: 767px) {
-    .instructions,
-    .body-element,
-    .search-container,
-    .search,
-    .calendar-container-from,
-    .calendar-container-to,
-    #from,
-    #to {
-        height: 50%;
-        width: 50%;
+
+    body
+    {
+        display: flex-column;
+        justify-content: center;
     }
-    .app-name {
-        height: 50%;
-        width: 100%;
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .body-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .image-container,
+    .uk-container {
+        justify-content: center;
+    }
+
+    .font-display,
+    .font-display-bold,
+    .uk-text-bold,
+    .uk-text-large,
+    .product_description,
+    .reason {
+        font-size: 80%;
+    }
+
+    .footer-text{
+        display: flex;
+        font-size: 80%;
     }
 };
- */
