@@ -163,7 +163,8 @@ footer {
     display: flex;
     display: inline;
     margin-top: 3%;
-    justify-content: space-between;
+
+    justify-content: center;
 
 }
 
@@ -202,6 +203,8 @@ footer {
     width: 15.5%;
     height: 90%;
     transform: rotate(11deg);
+    margin: 2%;
+
 }
 
 .body-container {
