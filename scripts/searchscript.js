@@ -1,6 +1,7 @@
 var api_key = "xlozztFokJwpqfVlSdbxiEsnNSdEQwdTvLg0rjDvPh6lR95dFqOKpQpC";
 var photos;
 var photolimit = 10;
+document.getElementById("recalled").style.display = "none";
 
 async function CuratedPhotos() {
     var p = Math.floor(Math.random() * 10);
@@ -28,7 +29,6 @@ callApi();
 
 
 function callApi() {
-    
     var dt_string = document.location.search;
     var datestring = dt_string.split("?")[1];
     var datestring1 = datestring.split("&")[0];
@@ -37,17 +37,17 @@ function callApi() {
     console.log(datestring2)
     var date1 = dayjs(datestring1).format("MM/DD/YYYY")
     var date2 = dayjs(datestring2).format("MM/DD/YYYY")
-
+    
     console.log(date1)
     console.log(date2)
-
+    
     $("#dates").text(date1 + " - " + date2)
-
+    
     fetch('https://api.fda.gov/drug/enforcement.json?search=report_date:[' + datestring1 + '+TO+' + datestring2 + ']&limit=200')
-        .then((response) => {
-            console.log(response.ok)
-            if (response.ok) {
-                response.json().then(function(data){
+    .then((response) => {
+        console.log(response.ok)
+        if (response.ok) {
+            response.json().then(function(data){
                     rabbithole(data);
                     console.log("Correct")
 
@@ -96,8 +96,10 @@ function callApi() {
     // localStorage.setItem("firm", firm);
 
 function lastRecall () {
+    document.getElementById("recalled").style.display = "block";
     var lastOne = localStorage.getItem("product");
     $(".text-past").text(lastOne);
+
 }
     $("#continuebtn").on("click", function(event)    {
 
