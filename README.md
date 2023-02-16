@@ -14,14 +14,14 @@ WHEN they select a certain date range and clicks the Rabbit Hole search button
 
 THEN the user is presented with random information from medicine that was selected in that time frame which includes recall status, reason for the recall and the parent company associated with the recall.
 
-WHEN the user reloads the page or clicks the back button
+WHEN the user chooses to "continue down the rabbit hole"
 
-THEN the drugs that the user has searched in the past will be suggested beneath the search bar
+THEN a new random drug that fits the criteria date range will populate and the name of the last drug that was displayed will be appended to the page for reference.
 
 
 ## Usage
 
-Ask-Alice is a website for consumers to research any medicines that have been recalled for over the last few years.
+Ask Alice is a website for consumers to research any medicines that have been recalled for over the last few years.
 
 The consumer will select a start and end date which will then take them to the results that will give them 1 generated recall within that timeframe. What's then displayed on the page is a brief description of the product, a reason for the recall, the date of the recall, the number of recalls during that time frame, and the parent company where the medicine was produced.
 
