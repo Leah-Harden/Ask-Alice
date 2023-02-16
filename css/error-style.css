@@ -1,0 +1,266 @@
+
+:root {
+    --red: #F57676;
+    --grey: #D9D9D9;
+    --brown: #362412;
+}
+
+.header-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 75px;
+    border-bottom: solid 8px #F57676;
+    padding: 7px;
+    margin: 1%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.uk-link:hover {
+    color: beige;
+    background-color: #F57676;
+}
+
+.back-button{
+    background-color: rgb(245, 120, 17);
+    color: beige;
+}
+
+.back-button:hover {
+    color: white;
+    background-color: #F57676;
+}
+
+aside {
+    float: left;
+}
+
+.product-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.drug-info {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
+
+.title {
+    font-size:50px ;
+    width: 100vw;
+    text-align: center;
+}
+
+.main-container{
+    text-align: center;
+    margin: 0px 100px 0px 100px;
+    display: flex;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+    max-width: 500px;
+}
+
+.flow {
+    max-width: 2000px;
+}
+
+hr {
+    height: 8px;
+    min-width: 200px;
+}
+
+.center{
+    text-align: center;
+}
+.red {
+    background-color: #F57676;
+    color: white;
+}
+
+.grey {
+    background-color: #D9D9D9;
+    color: #362412;
+}
+
+.comment {
+    border-radius: 10px;
+    padding: 35px;
+    font-size: 20px;
+    min-width: 300px;
+    text-overflow: scroll;
+    background-color: whitesmoke;
+}
+
+.brown {
+    color: #362412;
+}
+
+.link {
+    padding: 10px;
+}
+
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+.font-display-bold {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h2 {
+    justify-content: center;
+    align-items: center;
+}
+h4 {
+    font-size: 30px;
+    margin: 0% ;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 0%
+}
+
+
+.newInfo {
+text-align: right;
+}
+
+
+
+h5{
+    font-size: 25px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(245, 120, 17);
+    width: 225px;
+    padding: 5px;
+    border-radius: 3px;
+    justify-content: center;
+    
+}
+
+footer {
+    display: flex;
+    display: inline;
+    margin-top: 3%;
+    justify-content: space-between;
+
+}
+
+.footer-text {
+    flex-direction: column;
+    text-align: right;
+    align-items: center;
+    float: right;
+    padding-top: 15px;
+    border: solid whitesmoke 5px;
+    border-radius: 10px;
+    padding: 35px;
+    
+}
+
+.left-column {
+    height: 100%;
+    align-items: center;
+}
+
+.center-count {
+    text-align: center;
+}
+
+#rabbit {
+    justify-content: flex-start;
+    width: 5%;
+    height: 100%;
+    min-width: 2%;
+    min-height: 40%;
+    transform: rotate(11deg);
+    margin-left: 10px;
+}
+
+.rabbit-2 {
+    width: 15.5%;
+    height: 90%;
+    transform: rotate(11deg);
+}
+
+.body-container {
+    display: flex;
+flex-wrap: wrap;
+}
+
+.left-column {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#image-api {
+    border: #362412 solid 8px;
+    border-radius: 5px;
+    margin-top: 10%;
+    width: 75%;
+    height: 75%;
+    justify-content: center;
+}
+
+#api-source {
+    justify-content: center;
+}
+
+/* @media (min-width: 768px) and (max-width: 1023px) {
+    body
+    {
+        display: flex-column;
+        justify-content: center;
+        height: 75%;
+        width: 75%;
+    }};
+
+    .body-container {
+        flex-direction: column;
+    }
+
+    .app-name {
+        height: 75%;
+        width: 100%;
+    };
+
+@media (max-width: 767px) {
+    .instructions,
+    .body-element,
+    .search-container,
+    .search,
+    .calendar-container-from,
+    .calendar-container-to,
+    #from,
+    #to {
+        height: 50%;
+        width: 50%;
+    }
+    .app-name {
+        height: 50%;
+        width: 100%;
+    }
+};
+ */
