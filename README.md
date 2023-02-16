@@ -1,4 +1,3 @@
-Bock, Andrew 6:53 PM
 # Ask Alice: A Recall Rabbit Hole
 
 ## Click [here](https://leah-harden.github.io/Ask-Alice/) to reach the final website.
